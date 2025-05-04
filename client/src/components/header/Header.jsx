@@ -3,7 +3,7 @@ import React from 'react'
 import './headerStyle.css'
 import { Link } from 'react-router-dom'
 
-import logotype from '../images/logotype.png'
+import logotype from '../../../images/logotype.png'
 
 function Header() {
 
