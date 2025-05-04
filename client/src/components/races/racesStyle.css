@@ -1,0 +1,39 @@
+.races {
+  
+}
+
+.customCard {
+  background: linear-gradient(90deg, rgba(35, 0, 36, 1) 0%, rgba(76, 76, 140, 1) 100%, rgba(0, 212, 255, 1) 0%) !important;
+  color: white !important;
+  transition: .2s !important;
+}
+
+.customCard,
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.customCard, a:hover {
+  color: white !important;
+}
+
+.customCard:hover {
+  transform: scale(1.05) !important;
+}
+
+.cardImage {
+  height: 250px;
+}
+
+.cardInfo {
+  height: 250px;
+}
+
+.racesTextContainer {
+  height: 20% !important;
+}
+
+.racesCardContainer {
+  height: 80% !important;
+}

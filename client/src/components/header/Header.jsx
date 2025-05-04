@@ -1,20 +1,25 @@
 import React from 'react'
 
 import './headerStyle.css'
+import { Link } from 'react-router-dom'
 
 function Header() {
 
-  const headerOptions = ["About", "Races", "Units", "Lore"]
+  const headerOptions = ["About", "Races", "Esport"]
 
   return (
-    <div className="header d-flex p-3">
-      <div className="headerLogoContainer">
-        <img className="headerLogoImg h-100" src="../images/logotype.png" />
+    <div className="header d-flex p-3 shadow mt-0">
+      <div className="">
+        <Link to="/">
+          <img className="headerLogoImg h-100" src="../images/logotype.png" />
+        </Link>
       </div>
       <div className="optionlistContainer d-flex h-100">
         {headerOptions.map(option =>
         <div className="headerOption my-auto mx-2 align-middle">
-          <h3 className="m-0">{option}</h3>
+          <Link to={option.toLowerCase()}>
+            <h3 className="m-0">{option}</h3>
+          </Link>
         </div>)}
       </div>
     </div>

@@ -1,0 +1,22 @@
+.about {
+  background-color: black;
+}
+
+.aboutBackgroundContainer {
+  background: url("../images/jim.jpg") fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: .7;
+}
+
+.aboutLogo {
+  width: 250px;
+}
+
+.aboutHeader {
+  font-size: 3em;
+}
+
+.aboutTextContainer {
+  font-size: 1.7em;
+}

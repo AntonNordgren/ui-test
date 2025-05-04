@@ -1,9 +1,27 @@
 .header {
   height: 100px;
-  background-color: black;
+  background-color: #212e53;
   color: white;
+  /* background: no-repeat url("../images/stars.png");
+  background-size: cover; */
+  /* background:rgba(0, 0, 0, 0.8); */
+  /* background: #212e53; */
+  /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(76, 76, 140, 1) 52%, rgba(0, 212, 255, 1) 100%); */
+  background: #230024;
+  background: linear-gradient(90deg, rgba(35, 0, 36, 1) 0%, rgba(76, 76, 140, 1) 100%, rgba(0, 212, 255, 1) 0%);
 }
 
 .optionlistContainer {
   margin-left: auto;
+}
+
+.header,
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.header,
+a:hover {
+  color: rgb(255, 255, 255, 0.3) !important;
 }

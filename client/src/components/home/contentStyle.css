@@ -1,0 +1,13 @@
+.content {
+  position: relative;
+  width: 100%;
+  color: white;
+}
+
+.homeVideo {
+  object-fit: cover;
+}
+
+.homeVideoTextContainer {
+  z-index: 100;
+}

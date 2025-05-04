@@ -1,0 +1,23 @@
+import React from 'react'
+
+import './aboutStyle.css'
+
+function About() {
+  return (
+    <div className="about w-100 h-100 rounded">
+      <div className="aboutBackgroundContainer w-100 h-100 position-absolute z-0" />
+      <div className="container aboutTextContainer d-flex flex-column h-100 p-5 pt-3 z-1 position-relative">
+        {/* <h1 className="aboutHeader text-center mb-3">Starcraft 2</h1> */}
+        <img className="mx-auto aboutLogo pb-3" src='../images/logotype.png' />
+        <p className="text-start">
+          StarCraft II is a real-time strategy video game created by Blizzard Entertainment, first released in 2010. A sequel to the successful StarCraft, released in 1998, it is set in a militaristic far future. The narrative centers on a galactic struggle for dominance among various races. <br /> <br />
+          StarCraft II single-player campaign is split into three installments, each of which focuses on one of the three races: StarCraft II: Wings of Liberty (released in 2010), Heart of the Swarm (2013) and Legacy of the Void (2015). A final campaign pack called StarCraft II: Nova Covert Ops was released in 2016.<br /> <br />
+          StarCraft II multi-player gameplay spawned a separate esports competition that later drew interest from companies other than Blizzard, and attracted attention in South Korea and elsewhere, similar to the original StarCraft esports.
+          Since 2017, StarCraft II multi-player mode, co-op mode and the first single-player campaign have been free-to-play.
+        </p>
+      </div>
+    </div>
+  )
+}
+
+export default About
