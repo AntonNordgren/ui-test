@@ -3,6 +3,8 @@ import React from 'react'
 import './headerStyle.css'
 import { Link } from 'react-router-dom'
 
+import logotype from '../images/logotype.png'
+
 function Header() {
 
   const headerOptions = ["About", "Races", "Esport"]
@@ -11,7 +13,7 @@ function Header() {
     <div className="header d-flex p-3 shadow mt-0">
       <div className="">
         <Link to="/">
-          <img className="headerLogoImg h-100" src="../images/logotype.png" />
+          <img className="headerLogoImg h-100" src={logotype} />
         </Link>
       </div>
       <div className="optionlistContainer d-flex h-100">
