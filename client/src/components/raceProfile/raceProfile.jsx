@@ -3,16 +3,19 @@ import { useSearchParams, useLocation, Link } from 'react-router-dom'
 
 import './raceProfile.css'
 
+import terranLogo from '../../../images/terranLogo.png'
+
 function raceProfile() {
   const location = useLocation()
   const [currentRace, setCurrentRace] = useState({})
 
+
   const data = [
-    { 
+    {
       race: "Terran",
       text: "The terrans (or humans) are a young species with psionic potential. The terrans of the Koprulu sector descend from the survivors of a disastrous 23rd century colonization mission from Earth by Doran Routhe. Compared to the protoss and zerg, the terrans are highly factionalized and endure frequent wars amongst themselves in addition to the more recent conflicts with their alien neighbors. Nevertheless, terrans stand as one of the three dominant species of the galaxy.",
       background: "/images/terran2.jpg",
-      logo: "/images/terranLogo.png"
+      logo: terranLogo
     },
     {
       race: "Zerg",
@@ -32,8 +35,8 @@ function raceProfile() {
     const pathName = location.pathname
     const race = pathName.slice(7)
 
-    if (race == "terran") setCurrentRace(data[0])
-    if (race == "zerg") setCurrentRace(data[1])
+    if (race == "terran")  setCurrentRace(data[0])
+    if (race == "zerg")    setCurrentRace(data[1])
     if (race == "protoss") setCurrentRace(data[2])
 
   }, [])
@@ -43,27 +46,27 @@ function raceProfile() {
       <div className="raceHeaderContainer d-flex flex-column h-100">
         <div className="h-25 d-flex">
           <img className="raceProfileBackground object-fit-cover
-        position-absolute h-100 w-100 z-0" src={currentRace.background} />
+          position-absolute h-100 w-100 z-0" src={currentRace.background} />
 
-            <div className="position-relative d-flex flex-row w-100 p-5 justify-content-between container">
-                <div className="flex-grow-1 my-auto align-middle">
-                  <Link to="/races">
-                    <button className="customButton text-white p-3 rounded">Back</button>
-                  </Link>
-                </div>
-                <div className="flex-grow-1 my-auto align-middle">
-                  <h1 className="text-center display-1 m-0 p-0">{currentRace.race}</h1>
-                </div>
-                <div className="flex-grow-1 d-flex justify-content-end">
-                  <img className="h-100" src={currentRace.logo} />
-                </div>
+          <div className="position-relative d-flex flex-row w-100 p-5 justify-content-between container">
+            <div className="flex-grow-1 my-auto align-middle">
+              <Link to="/races">
+                <button className="customButton text-white p-3 rounded">Back</button>
+              </Link>
+            </div>
+            <div className="flex-grow-1 my-auto align-middle">
+              <h1 className="text-center display-1 m-0 p-0">{currentRace.race}</h1>
+            </div>
+            <div className="flex-grow-1 d-flex justify-content-end">
+              <img className="h-100" src={currentRace.logo} />
             </div>
           </div>
-          <div className="h-75 position-relative z-1 px-5 container">
-            <h3>
-              {currentRace.text}
-            </h3>
-          </div>
+        </div>
+        <div className="h-75 position-relative z-1 px-5 container">
+          <h3>
+            {currentRace.text}
+          </h3>
+        </div>
 
       </div>
     </div>

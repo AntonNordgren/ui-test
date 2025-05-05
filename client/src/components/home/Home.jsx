@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom'
 
 import './contentStyle.css'
 
+import video from '../../../images/sc2video.mp4'
+
 function content() {
   return (
     <>
@@ -14,6 +16,7 @@ function content() {
               <div className='m-auto'>
                 <h1 className="display-5">Starcraft 2 is a realtime strategy game developed by</h1>
                 <h1 className="display-5">Blizzard Entertainment</h1>
+                <h1 className="display-5">This app is still in development.</h1>
               </div>
             </div>
           </div>
@@ -27,9 +30,12 @@ function content() {
           </div>
         </div>
       </div>
-      <video className="homeVideo w-100 h-100 z-0" autoPlay loop muted>
-        <source src="../images/sc2video.mp4"></source>
-      </video>
+      <div className="container-fluid p-0 w-100 h-100">
+        <video className="homeVideo z-0 w-100 h-100" autoPlay loop muted>
+          <source src={video}></source>
+        </video>
+      </div>
+
     </>
 
   )

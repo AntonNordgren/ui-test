@@ -11,9 +11,8 @@ import './App.css'
 
 
 function App() {
-
   return (
-    <div className="container p-0">
+    <div className="container-fluid p-0">
       <BrowserRouter>
         <Layout >
           <div className="content flex-grow-1">
