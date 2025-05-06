@@ -5,7 +5,7 @@ import './racesStyle.css'
 
 import terranCardImage from '../../../images/terran.jpg'
 import zergCardImage from '../../../images/zerg.jpg'
-import protossCardImage from '../../../images/protoss2.jpg'
+import protossCardImage from '../../../images/protoss5.jpg'
 
 function Races() {
 
@@ -28,16 +28,16 @@ function Races() {
   ]
 
   return (
-    <div className="races w-100 h-100 d-flex flex-column container">
+    <div className="races w-100 h-100 d-flex flex-column container p-0">
       <div className="racesTextContainer m-4">
         <div className="d-flex h-100 w-100">  
-          <div className="text-center">
+          <div className="text-center mx-auto">
             <h1 className='display-1'>Races</h1>
             <h4 className="m-0 ">Starcraft 2 has three different races to play as with their own strengths and weaknesses.</h4>
           </div>
         </div>
       </div>
-      <div className="racesCardContainer container-fluid">
+      <div className="racesCardContainer container-fluid p-0">
 
           <div className="row m-auto">
             { 

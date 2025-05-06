@@ -7,7 +7,7 @@ import terranLogo from '../../../images/terranLogo.png'
 import zergLogo from '../../../images/zergLogo.png'
 import protossLogo from '../../../images/protossLogo.png'
 
-import terranBackground from '../../../images/terran2.jpg'
+import terranBackground from '../../../images/terran2.jpg'  
 import zergBackground from '../../../images/zerg5.jpg'
 import protossBackground from '../../../images/protoss.jpg'
 
