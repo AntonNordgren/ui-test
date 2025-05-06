@@ -4,6 +4,12 @@ import { useSearchParams, useLocation, Link } from 'react-router-dom'
 import './raceProfile.css'
 
 import terranLogo from '../../../images/terranLogo.png'
+import zergLogo from '../../../images/zergLogo.png'
+import protossLogo from '../../../images/protossLogo.png'
+
+import terranBackground from '../../../images/terran2.jpg'
+import zergBackground from '../../../images/zerg1.jpg'
+import protossBackground from '../../../images/protoss.jpg'
 
 function raceProfile() {
   const location = useLocation()
@@ -14,20 +20,20 @@ function raceProfile() {
     {
       race: "Terran",
       text: "The terrans (or humans) are a young species with psionic potential. The terrans of the Koprulu sector descend from the survivors of a disastrous 23rd century colonization mission from Earth by Doran Routhe. Compared to the protoss and zerg, the terrans are highly factionalized and endure frequent wars amongst themselves in addition to the more recent conflicts with their alien neighbors. Nevertheless, terrans stand as one of the three dominant species of the galaxy.",
-      background: "/images/terran2.jpg",
+      background: terranBackground,
       logo: terranLogo
     },
     {
       race: "Zerg",
       text: "The Zerg Swarm is a terrifying and ruthless amalgamation of biologically advanced, arthropodal aliens. Dedicated to the pursuit of genetic perfection, the zerg relentlessly hunt down and assimilate advanced species across the galaxy, incorporating useful genetic code into their own. They are named the Swarm per their ability to rapidly create strains, and the relentless assaults they employ to overwhelm their foes. Alongside the protoss and terrans, the zerg stand as one of the three dominant species of the Milky Way and are universally feared, hated and hunted as such. The Swarm in itself makes up a third of the power of the Koprulu Sector. The zerg remain in areas of the galaxy outside the Koprulu sector.",
-      background: "/images/zerg1.jpg",
-      logo: "/images/zergLogo.png"
+      background: zergBackground,
+      logo: zergLogo
     },
     {
       race: "Protoss",
       text: "The protoss (Khalani for Firstborn) are a sapient humanoid species native to the planet Aiur. Their advanced technology complements and enhances their psionic mastery. The main protoss cultural groups are the Khalai and the Nerazim, who reject the Khala. Other cultural branches include the Taldarim, Purifiers, and the Ihan-rii. Protoss civilization was reunified when the Khalai and Nerazim, sundered since the Discord, were reunited after the devastation of Aiur by the zerg during the Great War. Alongside the zerg and terrans, the protoss stand as one of the three dominant species of the Milky Way. Protoss are not found outside the Koprulu sector.",
-      background: "/images/protoss.jpg",
-      logo: "/images/protossLogo.png"
+      background: protossBackground,
+      logo: protossLogo
     },
   ]
 

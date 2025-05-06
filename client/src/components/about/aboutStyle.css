@@ -3,10 +3,10 @@
 }
 
 .aboutBackgroundContainer {
-  background: url("../images/jim.jpg") fixed;
+  /* background: url("../images/jim.jpg") fixed;
   background-size: cover;
   background-attachment: fixed;
-  opacity: .7;
+  opacity: .7; */
 }
 
 .aboutLogo {

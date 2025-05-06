@@ -3,13 +3,14 @@ import React from 'react'
 import './aboutStyle.css'
 
 import logotype from'../../../images/logotype.png'
+import aboutBackground from '../../../images/jim.jpg'
 
 function About() {
   return (
     <div className="about w-100 h-100 rounded">
+      <img className="w-100 h-100 position-absolute object-fit-cover opacity-50" src={aboutBackground} />
       <div className="aboutBackgroundContainer w-100 h-100 position-absolute z-0" />
       <div className="container aboutTextContainer d-flex flex-column h-100 p-5 pt-3 z-1 position-relative">
-        {/* <h1 className="aboutHeader text-center mb-3">Starcraft 2</h1> */}
         <img className="mx-auto aboutLogo pb-3" src={logotype} />
         <p className="text-start">
           StarCraft II is a real-time strategy video game created by Blizzard Entertainment, first released in 2010. A sequel to the successful StarCraft, released in 1998, it is set in a militaristic far future. The narrative centers on a galactic struggle for dominance among various races. <br /> <br />

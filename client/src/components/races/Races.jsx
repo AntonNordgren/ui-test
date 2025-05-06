@@ -3,23 +3,27 @@ import { Link } from 'react-router-dom'
 
 import './racesStyle.css'
 
+import terranCardImage from '../../../images/terran.jpg'
+import zergCardImage from '../../../images/zerg.jpg'
+import protossCardImage from '../../../images/protoss2.jpg'
+
 function Races() {
 
   const races = [
     {
       name: "Terran",
       text: "The terrans (or humans) are a young species with psionic potential. The terrans of the Koprulu sector descend from the survivors of a disastrous 23rd century colonization mission from Earth by Doran Routhe.",
-      img: "terran.jpg"
+      img: terranCardImage
     },
     {
       name: "Zerg",
       text: "The Zerg Swarm is a terrifying and ruthless amalgamation of biologically advanced, arthropodal aliens. Dedicated to the pursuit of genetic perfection, the zerg relentlessly hunt down and assimilate advanced species across the galaxy, incorporating useful genetic code into their own.",
-      img: "zerg.jpg"
+      img: zergCardImage
     },
     {
       name: "Protoss",
       text: "The protoss are a sapient humanoid species native to the planet Aiur. Their advanced technology complements and enhances their psionic mastery.",
-      img: "protoss2.jpg"
+      img: protossCardImage
     },
   ]
 
@@ -42,7 +46,7 @@ function Races() {
                 <Link to={race.name.toLowerCase()}>
                   <div className="">
                     <img class="cardImage rounded-top-3 object-fit-cover
-                    card-img-top" src={"images/" + race.img} alt="Card image cap"></img>
+                    card-img-top" src={race.img} alt="Card image cap"></img>
                   </div>
                   <div className="cardInfo position-relative p-0 m-0 p-3 pt-2">
                     <h1 className="card-title text-center mb-2">{race.name}</h1>
