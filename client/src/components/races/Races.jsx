@@ -31,32 +31,33 @@ function Races() {
     <div className="races w-100 h-100 d-flex flex-column container">
       <div className="racesTextContainer m-4">
         <div className="d-flex h-100 w-100">  
-          <div className="mx-auto align-middle my-auto text-center">
+          <div className="text-center">
             <h1 className='display-1'>Races</h1>
             <h4 className="m-0 ">Starcraft 2 has three different races to play as with their own strengths and weaknesses.</h4>
           </div>
         </div>
       </div>
-      <div className="racesCardContainer d-flex container-fluid p-5">
-        <div className="row m-auto">
-          { 
-            races.map(race =>
-              <div className="customCard col mx-4 m-0 p-0 rounded-3
-              shadow d-flex flex-column h-100 w-100">
-                <Link to={race.name.toLowerCase()}>
-                  <div className="">
-                    <img class="cardImage rounded-top-3 object-fit-cover
-                    card-img-top" src={race.img} alt="Card image cap"></img>
-                  </div>
-                  <div className="cardInfo position-relative p-0 m-0 p-3 pt-2">
-                    <h1 className="card-title text-center mb-2">{race.name}</h1>
-                    <h6 className="card-text">{race.text}</h6>
-                  </div>
-                </Link>
-              </div>
-            )
-          }
-        </div>
+      <div className="racesCardContainer container-fluid">
+
+          <div className="row m-auto">
+            { 
+              races.map(race =>
+                <div className="customCard col-lg mx-lg-3 my-4 m-0 p-0 rounded-3
+                shadow h-100 w-100">
+                  <Link to={race.name.toLowerCase()}>
+                    <div className="">
+                      <img class="cardImage rounded-top-3 object-fit-cover
+                      card-img-top" src={race.img} alt="Card image cap"></img>
+                    </div>
+                    <div className="cardInfo position-relative p-0 m-0 p-3 pt-2">
+                      <h1 className="card-title text-center mb-2">{race.name}</h1>
+                      <h6 className="card-text">{race.text}</h6>
+                    </div>
+                  </Link>
+                </div>
+              )
+            }
+          </div>
       </div>
     </div>
   )

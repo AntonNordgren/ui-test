@@ -8,7 +8,7 @@ import zergLogo from '../../../images/zergLogo.png'
 import protossLogo from '../../../images/protossLogo.png'
 
 import terranBackground from '../../../images/terran2.jpg'
-import zergBackground from '../../../images/zerg1.jpg'
+import zergBackground from '../../../images/zerg5.jpg'
 import protossBackground from '../../../images/protoss.jpg'
 
 function raceProfile() {
@@ -49,15 +49,17 @@ function raceProfile() {
 
   return (
     <div className="raceProfile text-white h-100">
+
+      <img className="raceProfileBackground object-fit-cover
+      position-absolute h-100 w-100 z-0" src={currentRace.background} />
+
       <div className="raceHeaderContainer d-flex flex-column h-100">
         <div className="h-25 d-flex">
-          <img className="raceProfileBackground object-fit-cover
-          position-absolute h-100 w-100 z-0" src={currentRace.background} />
 
           <div className="position-relative d-flex flex-row w-100 p-5 justify-content-between container">
             <div className="flex-grow-1 my-auto align-middle">
               <Link to="/races">
-                <button className="customButton text-white p-3 rounded">Back</button>
+                <button className="customButton text-white p-3 rounded shadow border-1">Back</button>
               </Link>
             </div>
             <div className="flex-grow-1 my-auto align-middle">

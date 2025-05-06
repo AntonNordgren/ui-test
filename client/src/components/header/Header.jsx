@@ -10,7 +10,7 @@ function Header() {
   const headerOptions = ["About", "Races"]
 
   return (
-    <div className="header d-flex p-3 shadow mt-0">
+    <div className="header d-flex p-3">
       <div className="">
         <Link to="/">
           <img className="headerLogoImg h-100" src={logotype} />
