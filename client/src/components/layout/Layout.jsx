@@ -10,7 +10,7 @@ function Layout({children}) {
     <div className="layout p-0 d-flex flex-column vh-100 w-100">
       <Header />
         {children}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

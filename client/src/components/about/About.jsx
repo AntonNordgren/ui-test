@@ -6,9 +6,9 @@ import logotype from'../../../images/logotype.png'
 import aboutBackground from '../../../images/jim.jpg'
 
 function About() {
-  return (
+  return (  
     <div className="about w-100 h-100 rounded">
-      <img className="w-100 h-100 position-absolute object-fit-cover opacity-50" src={aboutBackground} />
+      <img className="aboutBackground w-100 vh-100 position-absolute object-fit-cover z-1 opacity-75" src={aboutBackground} />
       <div className="aboutBackgroundContainer w-100 h-100 position-absolute z-0" />
       <div className="container aboutTextContainer d-flex flex-column h-100 p-5 pt-3 z-1 position-relative">
         <img className="mx-auto aboutLogo pb-3" src={logotype} />

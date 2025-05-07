@@ -7,6 +7,8 @@ import terranCardImage from '../../../images/terran.jpg'
 import zergCardImage from '../../../images/zerg.jpg'
 import protossCardImage from '../../../images/protoss5.jpg'
 
+import background from '../../../images/starcraft-wallpapper.jpg'
+
 function Races() {
 
   const races = [
@@ -28,8 +30,10 @@ function Races() {
   ]
 
   return (
-    <div className="races w-100 h-100 d-flex flex-column container p-0">
-      <div className="racesTextContainer m-4">
+    <>
+      <img className="raceBackground object-fit-cover position-absolute opacity-75 vh-100 w-100 z-1" src={background} />
+    <div className="races w-100 h-100 d-flex flex-column container p-0 z-1">
+      <div className="racesTextContainer m-4 mt-0 z-1">
         <div className="d-flex h-100 w-100">  
           <div className="text-center mx-auto">
             <h1 className='display-1'>Races</h1>
@@ -37,16 +41,16 @@ function Races() {
           </div>
         </div>
       </div>
-      <div className="racesCardContainer container-fluid p-0">
+      <div className="racesCardContainer container-fluid p-0 z-1">
 
           <div className="row m-auto">
             { 
               races.map(race =>
-                <div className="customCard col-lg mx-lg-3 my-4 m-0 p-0 rounded-3
+                <div key={race.name} className="customCard col-lg mx-lg-3 my-4 m-0 p-0 rounded-0
                 shadow h-100 w-100">
                   <Link to={race.name.toLowerCase()}>
                     <div className="">
-                      <img class="cardImage rounded-top-3 object-fit-cover
+                      <img className="cardImage rounded-top-0 object-fit-cover
                       card-img-top" src={race.img} alt="Card image cap"></img>
                     </div>
                     <div className="cardInfo position-relative p-0 m-0 p-3 pt-2">
@@ -60,6 +64,7 @@ function Races() {
           </div>
       </div>
     </div>
+    </>
   )
 }
 

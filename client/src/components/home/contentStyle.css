@@ -11,3 +11,8 @@
 .homeVideoTextContainer {
   z-index: 100;
 }
+
+.videoContainer {
+  position: relative;
+  top: -100px;
+}

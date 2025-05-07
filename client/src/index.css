@@ -22,9 +22,9 @@
 }
 
 body {
-  background: black;
+  background: black !important;
   background-size: cover;
-  background: no-repeat url("../images/starcraft-wallpapper.jpg") fixed;
+  /* background: no-repeat url("../images/starcraft-wallpapper.jpg") fixed; */
   background-size: cover;
   background-attachment: fixed;
 }

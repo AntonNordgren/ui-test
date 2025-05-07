@@ -1,5 +1,4 @@
 .about {
-  background-color: black;
 }
 
 .aboutBackgroundContainer {
@@ -19,4 +18,8 @@
 
 .aboutTextContainer {
   font-size: 1.7em;
+}
+
+.aboutBackground {
+  top: -100px;
 }

@@ -3,5 +3,6 @@
 }
 
 .raceProfileBackground {
+  top: -100px;
   opacity: .4;
 }
