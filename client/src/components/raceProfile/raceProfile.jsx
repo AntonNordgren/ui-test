@@ -58,7 +58,7 @@ function raceProfile() {
     <div className="raceProfile text-white vh-100">
 
       <img className="raceProfileBackground object-fit-cover
-      position-absolute vh-100 w-100 z-0" src={currentRace.background} />
+      position-fixed vh-100 w-100 z-0" src={currentRace.background} />
 
       <div className="raceHeaderContainer d-flex flex-column h-100 z-1">
         <div className="h-25 d-flex z-1">

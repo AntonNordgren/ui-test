@@ -31,20 +31,20 @@ function Races() {
 
   return (
     <>
-      <img className="raceBackground object-fit-cover position-absolute opacity-75 vh-100 w-100 z-1" src={background} />
-    <div className="races w-100 h-100 d-flex flex-column container p-0 z-1">
-      <div className="racesTextContainer m-4 mt-0 z-1">
-        <div className="d-flex h-100 w-100">  
-          <div className="text-center mx-auto">
-            <h1 className='display-1'>Races</h1>
-            <h4 className="m-0 ">Starcraft 2 has three different races to play as with their own strengths and weaknesses.</h4>
+      <img className="raceBackground object-fit-cover position-fixed opacity-75 vh-100 w-100 z-1" src={background} />
+      <div className="races w-100 h-100 d-flex flex-column container p-0 z-1">
+        <div className="racesTextContainer m-4 mt-0 z-1">
+          <div className="d-flex h-100 w-100">
+            <div className="text-center mx-auto">
+              <h1 className='display-1'>Races</h1>
+              <h4 className="m-0 ">Starcraft 2 has three different races to play as with their own strengths and weaknesses.</h4>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="racesCardContainer container-fluid p-0 z-1">
+        <div className="racesCardContainer container-fluid p-0 z-1">
 
-          <div className="row m-auto">
-            { 
+          <div className="row m-auto mx-3">
+            {
               races.map(race =>
                 <div key={race.name} className="customCard col-lg mx-lg-3 my-4 m-0 p-0 rounded-0
                 shadow h-100 w-100">
@@ -62,8 +62,8 @@ function Races() {
               )
             }
           </div>
-      </div>
-    </div>
+        </div>
+      </div>  
     </>
   )
 }
